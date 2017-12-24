@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 #import "YWOperation.h"
+#import "NSObject+Exception.h"
+#import "ViewController+Test.h"
+#import "YWUncaughtException.h"
 
 @interface ViewController ()
 
@@ -32,9 +35,44 @@
     [queue addOperation:op2];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSLog(@"viewcontroller viewWillAppear");
+}
+
 - (IBAction)buttonAction:(UIButton *)sender {
     NSLog(@"op1 is %@",self.operation.thread.executing?@"executing":@"finished");
     
+}
+- (IBAction)exceptionAction:(UIButton *)sender {
+    [self performSelector:@selector(exceptionMethod)];
+//    [self testCategery];
+}
+
+- (void)forwardInvocation:(NSInvocation *)anInvocation {
+    NSLog(@"forwardInvocation:%@",anInvocation);
+    SEL sel = anInvocation.selector;
+    [YWUncaughtException showTipWith:sel];
+}
+
++ (BOOL)resolveInstanceMethod:(SEL)sel {
+    return NO;
+}
+
+- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
+    NSMethodSignature* signature = [super methodSignatureForSelector:aSelector];
+    if (!signature) {
+        signature = [NSMethodSignature signatureWithObjCTypes:"v@:"];
+    }
+    return signature;
+}
+
+- (id)forwardingTargetForSelector:(SEL)aSelector {
+    return nil;
+}
+
+- (void)testCategery {
+    NSLog(@"View controller categery...");
 }
 
 - (void)didReceiveMemoryWarning {

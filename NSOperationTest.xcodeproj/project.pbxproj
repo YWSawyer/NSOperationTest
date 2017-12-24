@@ -14,6 +14,9 @@
 		776C47DA1FED37F20043B5CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776C47D81FED37F20043B5CA /* LaunchScreen.storyboard */; };
 		776C47DD1FED37F20043B5CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 776C47DC1FED37F20043B5CA /* main.m */; };
 		776C47E51FED38380043B5CA /* YWOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 776C47E41FED38380043B5CA /* YWOperation.m */; };
+		776C47E81FEDD8DF0043B5CA /* YWUncaughtException.m in Sources */ = {isa = PBXBuildFile; fileRef = 776C47E71FEDD8DF0043B5CA /* YWUncaughtException.m */; };
+		776C47EB1FEDD9800043B5CA /* NSObject+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 776C47EA1FEDD9800043B5CA /* NSObject+Exception.m */; };
+		776C47EE1FEF78150043B5CA /* ViewController+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 776C47ED1FEF78150043B5CA /* ViewController+Test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,12 @@
 		776C47DC1FED37F20043B5CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		776C47E31FED38380043B5CA /* YWOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YWOperation.h; sourceTree = "<group>"; };
 		776C47E41FED38380043B5CA /* YWOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YWOperation.m; sourceTree = "<group>"; };
+		776C47E61FEDD8DF0043B5CA /* YWUncaughtException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YWUncaughtException.h; sourceTree = "<group>"; };
+		776C47E71FEDD8DF0043B5CA /* YWUncaughtException.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YWUncaughtException.m; sourceTree = "<group>"; };
+		776C47E91FEDD9800043B5CA /* NSObject+Exception.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Exception.h"; sourceTree = "<group>"; };
+		776C47EA1FEDD9800043B5CA /* NSObject+Exception.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Exception.m"; sourceTree = "<group>"; };
+		776C47EC1FEF78150043B5CA /* ViewController+Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+Test.h"; sourceTree = "<group>"; };
+		776C47ED1FEF78150043B5CA /* ViewController+Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+Test.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +81,12 @@
 				776C47DC1FED37F20043B5CA /* main.m */,
 				776C47E31FED38380043B5CA /* YWOperation.h */,
 				776C47E41FED38380043B5CA /* YWOperation.m */,
+				776C47E61FEDD8DF0043B5CA /* YWUncaughtException.h */,
+				776C47E71FEDD8DF0043B5CA /* YWUncaughtException.m */,
+				776C47E91FEDD9800043B5CA /* NSObject+Exception.h */,
+				776C47EA1FEDD9800043B5CA /* NSObject+Exception.m */,
+				776C47EC1FEF78150043B5CA /* ViewController+Test.h */,
+				776C47ED1FEF78150043B5CA /* ViewController+Test.m */,
 			);
 			path = NSOperationTest;
 			sourceTree = "<group>";
@@ -148,9 +163,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				776C47D21FED37F20043B5CA /* ViewController.m in Sources */,
+				776C47EB1FEDD9800043B5CA /* NSObject+Exception.m in Sources */,
+				776C47EE1FEF78150043B5CA /* ViewController+Test.m in Sources */,
 				776C47E51FED38380043B5CA /* YWOperation.m in Sources */,
 				776C47DD1FED37F20043B5CA /* main.m in Sources */,
 				776C47CF1FED37F20043B5CA /* AppDelegate.m in Sources */,
+				776C47E81FEDD8DF0043B5CA /* YWUncaughtException.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
