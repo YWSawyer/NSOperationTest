@@ -10,6 +10,13 @@
 
 @implementation ViewController (Test)
 
++ (void)load {
+    NSLog(@"ViewController (Test) load");
+}
+
++ (void)initialize {
+    NSLog(@"ViewController (Test) initialize");
+}
 
 - (void)testCategery {
     NSLog(@"View controller categery...");
